@@ -1,5 +1,5 @@
 
-#Code for the day 1 part 1 of Advent For Code -challenge
+#Code for the day 1 part 2 of Advent For Code -challenge
 
 InputNumbersList = []
 copy_NumberList = []
@@ -8,7 +8,7 @@ FoundNumber1 = int()
 FoundNumber2 = int()
 FoundNumber3 = int()
 
-file_handler = open("input.txt", 'r')
+file_handler = open("Day1_Data.txt", 'r')
 
 
 for each_line in file_handler: #iterate through the file

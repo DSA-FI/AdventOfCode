@@ -6,7 +6,7 @@ copy_NumberList = []
 FoundNumber1 = int()
 FoundNumber2 = int()
 
-file_handler = open("input.txt", 'r')
+file_handler = open("Day1_Data.txt", 'r')
 
 
 for each_line in file_handler: #iterate through the file
