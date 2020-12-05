@@ -1,4 +1,5 @@
 
+
 #Code for the day 3 part 1 of Advent For Code -challenge
 
 SlopeMap = open("Day3\\Day3_Data.txt", 'r')
@@ -10,27 +11,20 @@ counter = 0
 for line in SlopeMap:
 
     line = line.rstrip()
-
-    counter = counter + 3
-    SquareArray = list(line)
+    SquareArray = line
     
-    while True: #problem starts here
 
-        try:
+    while len(SquareArray) < counter:
+        
+        SquareArray = SquareArray + line
 
-            CurrentSquare = SquareArray[counter]
-            break
 
-        except IndexError:
 
-            SquareArray.extend(SquareArray)
-            
-
-    if CurrentSquare == "#" and IgnoreFirstTree == False:
+    if SquareArray[counter] == "#" and IgnoreFirstTree == False:
         Tree_Counter = Tree_Counter + 1
 
     IgnoreFirstTree = False
-
+    counter = counter + 3
 
 
 print("\nOn current path you encounter", Tree_Counter, "trees.\n")
